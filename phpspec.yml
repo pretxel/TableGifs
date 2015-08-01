@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Tablegifts
+        psr4_prefix: Tablegifts
+        src_path: app
