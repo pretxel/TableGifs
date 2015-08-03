@@ -19,6 +19,7 @@ Route::post('event', 'TableGiftsController@addEvent');
 
 Route::get('event/{event_id}', 'TableGiftsController@showEvent');
 
+Route::get('events', 'TableGiftsController@showEvents');
 
 Route::post('event/{event_id}/item', 'TableGiftsController@addItem');
 

@@ -30,6 +30,13 @@ class TableGiftsController extends Controller
       return view('event_detail')->with('event', $event)->with('invites', $invites)->with('items', $items);
   }
 
+  public function showEvents(){
+
+      $events = Event::all();
+ return view('list_event')->with('events', $events);
+  }
+
+
 
   public function addInvite(Request $request, $event_id){
 
